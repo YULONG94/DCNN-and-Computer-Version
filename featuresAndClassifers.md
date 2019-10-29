@@ -11,8 +11,12 @@
 + 全局，这类描述方法会定义某个物体的一套用来描述整体的特征，比如描述小轿车车牌的方式：矩形，长宽比为440：140，通常为蓝底白字或者其他颜色，等等，这样描述的方式会忽视物体的细节特征，当物体被遮挡或者其他干扰物，那么就会出现检测错误。
 + 局部，这类描述方法侧重定义物体的细节特征，比如正常人脸检测时候，描述为：两个眼睛，两条眉毛，两个耳朵，一个嘴巴，一个鼻子，即使被部分遮挡，并不影响这些特征的收集。
 + 目前在一般图像处理库（比如OpenCV）中已经包含很多这种算法：HOG [Triggs and Dalal, 2005], SIFT[Lowe, 2004], SURF [Bay et al., 2008], FREAK [Alahi et al., 2012], ORB [Rublee et al., 2011], BRISK [Leutenegger et al., 2011], BRIEF [Calonder et al., 2010], and LIOP [Wang et al., 2011b], 下面列举几个开源经典的。
-+ HISTOGRAM OF ORIENTED GRADIENTS (HOG)
-+ Scale-invariant Feature Transform (SIFT)
-+ Speeded-up Robust Features (SURF)
-+ 传统特征描述的缺点
-## 机器学习中的分类问题
++ [HISTOGRAM OF ORIENTED GRADIENTS (HOG)](https://www.jianshu.com/p/395f0582c5f7)
++ [Scale-invariant Feature Transform (SIFT)](https://www.jianshu.com/p/95c4890c486b)
++ [Speeded-up Robust Features (SURF)](https://www.jianshu.com/p/d6f524178a23)
++ 传统特征描述的缺点, 不久之前，图像处理的天下可以完全被这一类特征分析的方法所统治，他们的典型特征就是：难度大，耗时，专家依赖性强，实在是由于不易使用，才开始出现自动提取特征人工智能算法，比如深层卷积神经网络。
+## 机器学习中的分类问题（本次学习主要针对监督学习）
+这里暂时不提供下面所列举的算法解释过程，想了解的话只能自行百度了，毕竟我们的主要任务不在这里，我们的主旨还是卷积神经网络
++ 线性，SVM [Cortes, 1995]; logistic regression; Linear Discriminant Analysis (LDA) [Fisher, 1936]
++ 非线性，Multi Layer Perceptron (MLP), kernel SVM
++ 集成学习，RDF [Breiman, 2001, Quinlan, 1986]; AdaBoost [Freund and Schapire, 1997]
