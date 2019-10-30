@@ -52,6 +52,10 @@
 
 ![线性计算的运算核](https://github.com/YULONG94/DCNN-and-Computer-Version/blob/master/imgs/conv_2.png)
 
+> 再接着我们就可以实现重新换一种形式实现卷积核的操作了：
+
+![线性计算的运算核](https://github.com/YULONG94/DCNN-and-Computer-Version/blob/master/imgs/conv_3.png)
+
 ### 感兴趣区域池化层
 ### 空间金字塔池化
 ### VLAD特征层
