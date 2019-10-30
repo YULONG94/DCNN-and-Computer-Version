@@ -44,11 +44,13 @@
 
 ![输入矩阵转化过程](https://github.com/YULONG94/DCNN-and-Computer-Version/blob/master/imgs/conv_0.png)
 
-> 然后我们先看看实际进行卷积操作时得到的结果
+> 然后我们先看看实际进行卷积操作时得到的结果：
 
 ![正常的计算结果](https://github.com/YULONG94/DCNN-and-Computer-Version/blob/master/imgs/conv_1.png)
 
+> 接下来就是对卷积过程的转化了，我们构造下面的矩阵：
 
+![线性计算的运算核](https://github.com/YULONG94/DCNN-and-Computer-Version/blob/master/imgs/conv_2.png)
 
 ### 感兴趣区域池化层
 ### 空间金字塔池化
