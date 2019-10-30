@@ -50,11 +50,11 @@
 
 > 接下来就是对卷积过程的转化了，我们构造下面的矩阵：
 
-![线性计算的运算核](https://github.com/YULONG94/DCNN-and-Computer-Version/blob/master/imgs/conv_2.png)
+![线性乘法的运算核](https://github.com/YULONG94/DCNN-and-Computer-Version/blob/master/imgs/conv_2.png)
 
 > 再接着我们就可以实现重新换一种形式实现卷积核的操作了：
 
-![线性计算的运算核](https://github.com/YULONG94/DCNN-and-Computer-Version/blob/master/imgs/conv_3.png)
+![卷积核转线性乘法](https://github.com/YULONG94/DCNN-and-Computer-Version/blob/master/imgs/conv_3.png)
 
 ### 感兴趣区域池化层
 ### 空间金字塔池化
