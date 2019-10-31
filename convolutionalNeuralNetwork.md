@@ -63,8 +63,13 @@
 + 第三个补充点，那么对于输入输出的尺寸不一样就不可以进行反卷积了吗？答案是：否，以上的过程知识为了说明正常卷积和反卷积都可以看作矩阵的线性乘法，实际使用的时候，一般先将比较小尺寸的输入填充足够多的零，然后做卷积操作，到这里应该突然引起争论，这样解释了一大堆，到头来，说是反卷积，到最后还不是卷积操作。答案是：对啊，所以说前面认为两者是逆过程不合适呢，只不过从一个将输入变小，一个将输入变大，“形象”地认为是相反的过程，而且在有一些网络中也出现过前面是一步一步的卷积操作，而后用反卷积一步一步还原，整个模型呈现一个沙漏的形状
 
 ### 感兴趣区域池化层
-这种网络层（Region of Interest (RoI) Pooling layer）常被用于物体检测，第一次应用是2015年Ross Girshick提出的fast RCNN，这也是RCNN蜕化成高速RCNN的重要原因，后来更是进化成ROI Align，2017年Kaiming He等人用在Mask R-CNN上，一定程度上提高了实例分割的精度，
+这种网络层（Region of Interest (RoI) Pooling layer）常被用于物体检测，第一次应用是2015年Ross Girshick提出的fast RCNN，这也是RCNN蜕化成高速RCNN的重要原因，后来更是进化成ROI Align，2017年Kaiming He等人用在Mask R-CNN上，一定程度上提高了实例分割的精度。可以这么简单来理解，R-CNN是对原始图像进行裁剪并提取特征，但是Fast-RCNN是对特征图进行裁剪，每张图只用坐一起特征提取，从而实现特征图共享来减少计算时间。
++ 比较全面的解释ROI Pooling：[Region of interest pooling explained](https://blog.deepsense.ai/region-of-interest-pooling-explained/)
++ 关于ROI Align：[详解 ROI Align 的基本原理和实现细节](https://blog.csdn.net/u011918382/article/details/79455407)
 ### 空间金字塔池化
+SPP-Net是在fast-RCNN之前，与ROI pooling类似，金字塔池化的方式也式通过特征图池化的方法解决CNN和R-CNN中存在的问题。
++ [SPP-net文章详细解读](https://www.jianshu.com/p/07a573035e43)
++ [sppnet如何解决输入size问题](https://www.jianshu.com/p/e36aef9b7a8a)
 ### VLAD特征层
 ### 空间变化层
 

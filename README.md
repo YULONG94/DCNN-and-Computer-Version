@@ -18,3 +18,5 @@
 + 卷积神经网络发展史
 + 网络层（卷积层，池化层，……）
 + 损失函数
+
+## [待处理](https://github.com/YULONG94/DCNN-and-Computer-Version/blob/master/underdo.md)
