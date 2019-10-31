@@ -66,12 +66,19 @@
 这种网络层（Region of Interest (RoI) Pooling layer）常被用于物体检测，第一次应用是2015年Ross Girshick提出的fast RCNN，这也是RCNN蜕化成高速RCNN的重要原因，后来更是进化成ROI Align，2017年Kaiming He等人用在Mask R-CNN上，一定程度上提高了实例分割的精度。可以这么简单来理解，R-CNN是对原始图像进行裁剪并提取特征，但是Fast-RCNN是对特征图进行裁剪，每张图只用坐一起特征提取，从而实现特征图共享来减少计算时间。
 + 比较全面的解释ROI Pooling：[Region of interest pooling explained](https://blog.deepsense.ai/region-of-interest-pooling-explained/)
 + 关于ROI Align：[详解 ROI Align 的基本原理和实现细节](https://blog.csdn.net/u011918382/article/details/79455407)
+
 ### 空间金字塔池化
 SPP-Net是在fast-RCNN之前，与ROI pooling类似，金字塔池化的方式也式通过特征图池化的方法解决CNN和R-CNN中存在的问题。
 + [SPP-net文章详细解读](https://www.jianshu.com/p/07a573035e43)
 + [sppnet如何解决输入size问题](https://www.jianshu.com/p/e36aef9b7a8a)
+
 ### VLAD特征层
+前面在传统特征描述中提到过一些特征描述算法比如HOG，SIFT，SURF，其实基于这些基础的特征提取算法，有很多特征统计分析的算法应运而生，其中就包括VLAD特征(vector of locally aggregated descriptors)和BoF(Bag of features)算法等。暂时对这些算法没什么研究，所以暂时只能将他们列出，整体情况总结完之后的首要任务就是研究一下这些算法。
++ 先放一个[VLAD的介绍博客](https://blog.csdn.net/happyer88/article/details/47054503)
+
 ### 空间变化层
++ 这种网络是2015年由Google旗下的新锐AI公司DeepMind的四位剑桥Phd研究员提出，顾名思义，这种网络可以实现任意的空间变化,我理解的是相当于在网络内部增加一个数据集扩充功能，减少过拟合的问题，Spatial Transformer Networks（STN）。
++ 还是放一篇博客 [详细解读Spatial Transformer Networks（STN）](https://blog.csdn.net/qq_39422642/article/details/78870629)
 
 ## 优秀博客（搬运工就靠这些活着呢）
 + [卷积神经网络结构](https://blog.csdn.net/qq_21578125/article/details/80972996)
